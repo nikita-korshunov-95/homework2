@@ -43,7 +43,7 @@ public class Main {
         int oneMinute = twoMinutes / 2;
         int twentyMinutes = oneMinute * 20;
         System.out.println(" За 20 минут машина произвела " + twentyMinutes + " штук бутылок");
-        int oneDay = oneMinute * 480;
+        int oneDay = oneMinute * 60 * 24;
         System.out.println(" За один день машина произвела " + oneDay + " штук бутылок");
         int threeDays = oneDay * 3;
         System.out.println(" За три дня машина произвела " + threeDays + " штук бутылок");
@@ -51,10 +51,10 @@ public class Main {
         System.out.println(" За один месяц машина произвела " + oneMonth + " штук бутылок");
 
         System.out.println("Задача №5");
-        byte Classes = 120;
+        byte classes = 120;
         byte whiteColor = 2;
         byte brownColor = 4;
-        int numberOfClasses = Classes / (whiteColor + brownColor);
+        int numberOfClasses = classes / (whiteColor + brownColor);
         int numberOfWhiteColor = numberOfClasses * whiteColor;
         int numberOfBrownColor = numberOfClasses * brownColor;
         System.out.println("В школе, где " + numberOfClasses + " классов, нужно " + numberOfWhiteColor + " банок белой краски и " + numberOfBrownColor + " банок коричневой краски");
@@ -75,19 +75,21 @@ public class Main {
         System.out.println("Если спортсмен будет терять каждый день по 250 грамм то похудеет за  " + result250 + " дней");
         int result500 = weightGram / 500;
         System.out.println("Если спортсмен будет терять каждый день по 500 грамм то похудеет за  " + result500 + " дней");
+        int avg = (result250 + result500) / 2;
+        System.out.println("В среднем требуется дней для похудения - " + avg);
 
         System.out.println("Задача №8");
         int salaryMasha = 67760;
         int salaryDenis = 83690;
         int salaryChristina = 76230;
         int newSalaryMasha = salaryMasha + (salaryMasha * 10 / 100);
-        int yearMasha = newSalaryMasha - salaryMasha;
+        int yearMasha = (newSalaryMasha - salaryMasha) * 12;
         System.out.println("Маша теперь получает " + newSalaryMasha + " рублей. Годовой доход вырос на " + yearMasha + " рублей");
         int newSalaryDenis = salaryDenis + (salaryDenis * 10 / 100);
-        int yearDenis = newSalaryDenis - salaryDenis;
+        int yearDenis = (newSalaryDenis - salaryDenis) *12;
         System.out.println("Денис теперь получает " + newSalaryDenis + " рублей. Годовой доход вырос на " + yearDenis + " рублей");
         int newSalaryChristina = salaryChristina + (salaryChristina * 10 / 100);
-        int yearChristina = newSalaryChristina - salaryChristina;
+        int yearChristina = (newSalaryChristina - salaryChristina) *12;
         System.out.println("Кристина теперь получает " + newSalaryChristina + " рублей. Годовой доход вырос на " + yearChristina + " рублей");
 
 
