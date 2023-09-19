@@ -76,7 +76,7 @@ public class Main {
         int result500 = weightGram / 500;
         System.out.println("Если спортсмен будет терять каждый день по 500 грамм то похудеет за  " + result500 + " дней");
 
-        System.out.println("Задача №8");
+        System.out.println("Task №8");
         int salaryMasha = 67760;
         int salaryDenis = 83690;
         int salaryChristina = 76230;
