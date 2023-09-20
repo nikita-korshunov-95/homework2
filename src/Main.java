@@ -82,14 +82,15 @@ public class Main {
         int salaryMasha = 67760;
         int salaryDenis = 83690;
         int salaryChristina = 76230;
-        int newSalaryMasha = salaryMasha + (salaryMasha * 10 / 100);
-        int yearMasha = (newSalaryMasha - salaryMasha) * 12;
+        float newSalary = 0.1f;
+        float newSalaryMasha = salaryMasha + (salaryMasha * newSalary);
+        float yearMasha = (newSalaryMasha - salaryMasha) * 12;
         System.out.println("Маша теперь получает " + newSalaryMasha + " рублей. Годовой доход вырос на " + yearMasha + " рублей");
-        int newSalaryDenis = salaryDenis + (salaryDenis * 10 / 100);
-        int yearDenis = (newSalaryDenis - salaryDenis) *12;
+        float newSalaryDenis = salaryDenis + (salaryDenis * newSalary);
+        float yearDenis = (newSalaryDenis - salaryDenis) *12;
         System.out.println("Денис теперь получает " + newSalaryDenis + " рублей. Годовой доход вырос на " + yearDenis + " рублей");
-        int newSalaryChristina = salaryChristina + (salaryChristina * 10 / 100);
-        int yearChristina = (newSalaryChristina - salaryChristina) *12;
+        float newSalaryChristina = salaryChristina + (salaryChristina * newSalary);
+        float yearChristina = (newSalaryChristina - salaryChristina) *12;
         System.out.println("Кристина теперь получает " + newSalaryChristina + " рублей. Годовой доход вырос на " + yearChristina + " рублей");
 
 
